@@ -2,541 +2,593 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unani Swarna Bhasma | Horsepower Industry</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Unani Swarna Bhasma | Premium Ayurvedic Gold</title>
     <style>
+        /* Ultra-minimal reset with performance focus */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeSpeed;
         }
-        
+
+        /* Critical Above-the-Fold Styles */
         body {
-            background-color: #f8f5f0;
-            color: #333;
-            line-height: 1.6;
+            background: #0a0a0a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            overflow-x: hidden;
+            position: relative;
         }
-        
+
+        /* Metallic gradient background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 40%),
+                linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            z-index: -2;
+        }
+
+        /* Animated particle background */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(1px 1px at 20% 30%, rgba(255, 215, 0, 0.3) 1px, transparent 0),
+                radial-gradient(1px 1px at 40% 70%, rgba(120, 119, 198, 0.3) 1px, transparent 0),
+                radial-gradient(1px 1px at 60% 20%, rgba(255, 215, 0, 0.3) 1px, transparent 0),
+                radial-gradient(1px 1px at 80% 50%, rgba(120, 119, 198, 0.3) 1px, transparent 0),
+                radial-gradient(1px 1px at 30% 80%, rgba(255, 215, 0, 0.3) 1px, transparent 0);
+            background-size: 400px 400px;
+            z-index: -1;
+            animation: particleMove 40s linear infinite;
+        }
+
+        @keyframes particleMove {
+            from { transform: translateY(0) translateX(0); }
+            to { transform: translateY(200px) translateX(100px); }
+        }
+
+        /* Main container - Luxury glass morphism */
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header Styles */
-        header {
-            background: linear-gradient(to right, #8B4513, #D2691E);
-            color: white;
-            padding: 1.5rem 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .logo h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-        
-        .logo-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        
-        nav a:hover {
-            color: #FFD700;
-            text-decoration: underline;
-        }
-        
-        /* Main Content */
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin: 40px 0;
-        }
-        
-        .product-image {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .product-image img {
             width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            border: 5px solid #fff;
-        }
-        
-        .product-details {
-            flex: 2;
-            min-width: 300px;
-        }
-        
-        .product-title {
-            color: #8B4513;
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #D2691E;
-            padding-bottom: 10px;
-        }
-        
-        .price-section {
-            margin: 25px 0;
+            max-width: 360px;
+            aspect-ratio: 9/16;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border-radius: 32px;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+            animation: containerAppear 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
-        .original-price {
-            text-decoration: line-through;
-            color: #999;
-            font-size: 1.4rem;
-            margin-right: 15px;
+
+        @keyframes containerAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
-        
-        .current-price {
-            color: #D2691E;
-            font-size: 2rem;
-            font-weight: 700;
+
+        /* Gold border effect */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 32px;
+            padding: 2px;
+            background: linear-gradient(45deg, 
+                transparent 0%, 
+                rgba(255, 215, 0, 0.3) 25%,
+                rgba(120, 119, 198, 0.3) 50%,
+                rgba(255, 215, 0, 0.3) 75%,
+                transparent 100%);
+            -webkit-mask: 
+                linear-gradient(#fff 0 0) content-box, 
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            animation: borderGlow 3s ease-in-out infinite;
         }
-        
-        .discount-badge {
-            background-color: #FF4500;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-left: 15px;
-            display: inline-block;
+
+        @keyframes borderGlow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
         }
-        
-        .quantity-selector {
-            margin: 25px 0;
-        }
-        
-        .quantity-selector label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: #8B4513;
-        }
-        
-        .quantity-input {
-            width: 100px;
-            padding: 10px;
-            border: 2px solid #D2691E;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            text-align: center;
-        }
-        
-        .telegram-order {
-            background-color: #0088cc;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
-        }
-        
-        .telegram-order:hover {
-            background-color: #0077b5;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 136, 204, 0.4);
-        }
-        
-        .telegram-logo {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-        }
-        
-        .encrypted-note {
-            font-size: 0.8rem;
-            color: #666;
-            margin-top: 8px;
-            font-style: italic;
-        }
-        
-        /* Benefits Section */
-        .benefits-section {
-            margin: 40px 0;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .section-title {
-            color: #8B4513;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #D2691E;
-        }
-        
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 25px;
-        }
-        
-        .benefit-item {
-            background-color: #f9f5f0;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #D2691E;
-        }
-        
-        .benefit-item h4 {
-            color: #8B4513;
-            margin-bottom: 10px;
-        }
-        
-        .hindi-content {
-            margin-top: 40px;
-            direction: ltr;
-        }
-        
-        .hindi-title {
-            color: #8B4513;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-        
-        /* Contact & Policies */
-        .contact-policies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        .contact-info, .business-hours, .policies {
-            flex: 1;
-            min-width: 300px;
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .contact-info h3, .business-hours h3, .policies h3 {
-            color: #8B4513;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .telegram-user {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 15px 0;
-        }
-        
-        .telegram-user a {
-            color: #0088cc;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .hours-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        .hours-table tr {
-            border-bottom: 1px solid #eee;
-        }
-        
-        .hours-table td {
-            padding: 8px 0;
-        }
-        
-        .policy-links {
-            list-style: none;
-        }
-        
-        .policy-links li {
-            margin-bottom: 10px;
-        }
-        
-        .policy-links a {
-            color: #8B4513;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s;
-        }
-        
-        .policy-links a:hover {
-            color: #D2691E;
-            padding-left: 5px;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #8B4513;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-            margin-top: 40px;
-        }
-        
-        .footer-content {
+
+        /* Content layout */
+        .content {
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            justify-content: space-between;
+            text-align: center;
+            position: relative;
+            z-index: 1;
         }
-        
-        .footer-logo {
-            font-size: 1.8rem;
+
+        /* Premium image container */
+        .image-container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin-top: 10px;
+            border-radius: 24px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            animation: float 6s ease-in-out infinite;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.5),
+                0 0 60px rgba(255, 215, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.2);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotateX(0); }
+            50% { transform: translateY(-10px) rotateX(5deg); }
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: saturate(1.1) contrast(1.05);
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: center center;
+        }
+
+        .image-container:hover .product-image {
+            transform: scale(1.08) rotateY(5deg);
+        }
+
+        /* Image glow effect */
+        .image-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, 
+                rgba(255, 215, 0, 0.1) 0%, 
+                transparent 70%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Luxury typography */
+        .product-name {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-top: 8px;
+            text-shadow: 0 4px 30px rgba(255, 215, 0, 0.3);
+            position: relative;
+            display: inline-block;
+        }
+
+        .product-name::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 15%;
+            width: 70%;
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 215, 0, 0.5), 
+                transparent);
+        }
+
+        .hindi-text {
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 6px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            opacity: 0.9;
+        }
+
+        /* Premium tagline */
+        .tagline {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-top: 4px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .tagline::before,
+        .tagline::after {
+            content: '✦';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 215, 0, 0.5);
+        }
+
+        .tagline::before {
+            left: -20px;
+        }
+
+        .tagline::after {
+            right: -20px;
+        }
+
+        /* Benefits hint */
+        .benefits-hint {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+            max-width: 280px;
+            margin: 16px auto;
+            padding: 0 12px;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+
+        /* Luxury divider */
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 215, 0, 0.6), 
+                rgba(120, 119, 198, 0.6), 
+                transparent);
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .divider::before {
+            content: '✦';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 215, 0, 0.8);
+            font-size: 0.8rem;
+        }
+
+        /* Killer Telegram Button */
+        .telegram-btn {
+            background: linear-gradient(135deg, 
+                #0088cc 0%, 
+                #006699 50%, 
+                #004466 100%);
+            color: white;
+            border: none;
+            padding: 20px 36px;
+            border-radius: 16px;
+            font-size: 1rem;
             font-weight: 700;
-            margin-bottom: 10px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            max-width: 280px;
+            margin: 16px 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 8px 32px rgba(0, 136, 204, 0.4),
+                0 2px 8px rgba(0, 136, 204, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
         }
-        
-        .copyright {
-            color: #f0e6d6;
-            font-size: 0.9rem;
+
+        .telegram-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.2), 
+                transparent);
+            transition: 0.5s;
         }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
+
+        .telegram-btn:hover::before {
+            left: 100%;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 15px 40px rgba(0, 136, 204, 0.6),
+                0 4px 15px rgba(0, 136, 204, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            background: linear-gradient(135deg, 
+                #00aaff 0%, 
+                #0088cc 50%, 
+                #006699 100%);
+        }
+
+        .telegram-btn:active {
+            transform: translateY(0) scale(0.98);
+            transition: transform 0.1s;
+        }
+
+        .telegram-logo {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .telegram-btn:hover .telegram-logo {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        /* Secure badge */
+        .secure-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 12px;
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .secure-badge::before {
+            content: '🔒';
+            font-size: 0.8rem;
+            filter: grayscale(1) brightness(2);
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 48px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            padding-top: 8px;
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            width: 4px;
+            height: 8px;
+            background: rgba(255, 215, 0, 0.8);
+            border-radius: 2px;
+            animation: scrollIndicator 2s infinite;
+        }
+
+        @keyframes scrollIndicator {
+            0%, 100% { 
+                transform: translateY(0);
+                opacity: 1;
+            }
+            50% { 
+                transform: translateY(8px);
+                opacity: 0.5;
+            }
+        }
+
+        /* Performance optimizations */
+        .container {
+            contain: layout paint style;
+            will-change: transform;
+        }
+
+        .product-image {
+            content-visibility: auto;
+            will-change: transform;
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 400px) {
+            .container {
+                padding: 16px;
             }
             
-            nav ul {
-                gap: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
+            .image-container {
+                width: 180px;
+                height: 180px;
             }
             
-            .product-title {
-                font-size: 1.8rem;
+            .product-name {
+                font-size: 1.7rem;
+            }
+        }
+
+        @media (hover: none) {
+            .telegram-btn:hover {
+                transform: none;
             }
             
-            .benefits-grid {
-                grid-template-columns: 1fr;
+            .telegram-btn:active {
+                transform: scale(0.96);
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/697f9211b15be_1c9c11c2-49b4-457e-9d3b-cd182d684947.jfif" alt="Horsepower Industry Logo" class="logo-img">
-                    <h1>Horsepower Industry</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#product">Product</a></li>
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#policies">Policies</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
     <div class="container">
-        <div class="main-content">
-            <div class="product-image">
-                <img src="https://hpnindia.in/wp-content/uploads/2024/04/PI_7-450x450-1.webp" alt="Unani Swarna Bhasma">
+        <div class="content">
+            <!-- Premium Product Image -->
+            <div class="image-container">
+                <img 
+                    src="https://d1yei2z3i6k35z.cloudfront.net/13184094/697fb6fdc7f4b_61843ecf-cd48-45a6-8409-6de8a784b1f4.jfif" 
+                    alt="Unani Swarna Bhasma - Premium Ayurvedic Gold"
+                    class="product-image"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                >
             </div>
-            
-            <div class="product-details">
-                <h1 class="product-title">Unani Swarna Bhasma / यूनानी स्वर्ण भस्म</h1>
-                
-                <div class="price-section">
-                    <span class="original-price">₹8,999.00</span>
-                    <span class="current-price">₹6,000.00</span>
-                    <span class="discount-badge">33% OFF</span>
-                    
-                    <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" class="quantity-input" value="1" min="1">
-                    </div>
-                    
-                    <a href="https://t.me/Hores_Power" class="telegram-order" target="_blank">
-                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/697fb6fdc7f4b_61843ecf-cd48-45a6-8409-6de8a784b1f4.jfif" alt="Telegram Logo" class="telegram-logo">
-                        ORDER FORM TELEGRAM
-                    </a>
-                    <div class="encrypted-note">[ENCRYPTED] Secure ordering through Telegram</div>
-                </div>
-                
-                <div class="category-info">
-                    <p><strong>Category:</strong> Swarn Bhasm</p>
-                    <p><strong>Availability:</strong> In Stock</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Benefits Section -->
-        <div class="benefits-section">
-            <h2 class="section-title">Product Benefits & Description</h2>
-            <p>Unani Swarna Bhasma, which is gold ash, has been traditionally used in Unani medicine for its potential health benefits. Some of the benefits associated with Swarna Bhasma include:</p>
-            
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <h4>Rejuvenating Properties</h4>
-                    <p>Swarna Bhasma is believed to have rejuvenating properties that can help in revitalizing the body and mind.</p>
-                </div>
-                
-                <div class="benefit-item">
-                    <h4>Vitality Booster</h4>
-                    <p>It is thought to be a potent vitality booster, helping in enhancing overall energy levels and stamina.</p>
-                </div>
-                
-                <div class="benefit-item">
-                    <h4>Antioxidant Rich</h4>
-                    <p>Swarna Bhasma is rich in antioxidants, which may help in reducing oxidative stress and combating free radicals.</p>
-                </div>
-                
-                <div class="benefit-item">
-                    <h4>Anti-inflammatory</h4>
-                    <p>It is believed to possess anti-inflammatory properties, which can aid in reducing inflammation and associated symptoms.</p>
-                </div>
-                
-                <div class="benefit-item">
-                    <h4>Immune Support</h4>
-                    <p>Some traditional practices suggest that Swarna Bhasma helps in strengthening the immune system.</p>
-                </div>
-                
-                <div class="benefit-item">
-                    <h4>Nervous System Support</h4>
-                    <p>It is also believed to have a positive impact on the nervous system, potentially aiding cognitive function.</p>
+            <!-- Luxury Product Name -->
+            <div>
+                <div class="tagline">PREMIUM AYURVEDIC</div>
+                <h1 class="product-name">SWARNA BHASMA</h1>
+                <div class="hindi-text">स्वर्ण भस्म</div>
+                <div class="benefits-hint">
+                    Ancient Unani gold formulation • Rejuvenation & Vitality • Premium Purity
                 </div>
             </div>
-            
-            <div class="hindi-content">
-                <h3 class="hindi-title">हिंदी में लाभ</h3>
-                <p>यूनानी स्वर्ण भस्म, जिसे सोने का भस्म भी कहा जाता है, यूनानी चिकित्सा में इसके संभावित स्वास्थ्य लाभों के लिए परंपरागत रूप से उपयोग किया गया है। कुछ इसके लाभों में शामिल हैं:</p>
-                <ul>
-                    <li><strong>पुनर्जीवनी गुण:</strong> स्वर्ण भस्म में पुनर्जीवनी गुण माने जाते हैं जो शरीर और मस्तिष्क को पुनर्जीवित करने में मदद करता हैं।</li>
-                    <li><strong>ऊर्जा बढ़ाने वाला:</strong> यह पूरी ताकत का एक पोषक धत्तू होता है, जो संपूर्ण ऊर्जा स्तर और स्थामितीकरण में मदद करता है।</li>
-                    <li><strong>एंटीऑक्सीडेंट:</strong> स्वर्ण भस्म एंटीऑक्सीडेंट से भरपूर होता है, जो शरीर में ऑक्सीडेटिव तनाव को कम करने में मदद करता है।</li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Contact & Policies -->
-        <div class="contact-policies">
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <div class="telegram-user">
-                    <i class="fab fa-telegram" style="color: #0088cc; font-size: 1.2rem;"></i>
-                    <a href="https://t.me/Hores_Power" target="_blank">@Hores_Power</a>
-                </div>
-                <p>For orders and inquiries, please contact us via Telegram. Our representative will assist you promptly.</p>
-            </div>
-            
-            <div class="business-hours">
-                <h3>Business Hours</h3>
-                <table class="hours-table">
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9:00 AM - 7:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>9:00 AM - 7:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>11:00 AM - 7:00 PM</td>
-                    </tr>
-                </table>
-            </div>
-            
-            <div class="policies">
-                <h3>Policies</h3>
-                <ul class="policy-links">
-                    <li><a href="#"><i class="fas fa-file-contract"></i> Terms and Conditions</a></li>
-                    <li><a href="#"><i class="fas fa-undo-alt"></i> Return Policy</a></li>
-                    <li><a href="#"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
-                </ul>
-            </div>
+            <!-- Luxury Divider -->
+            <div class="divider"></div>
+
+            <!-- Killer Telegram Button -->
+            <button class="telegram-btn" id="orderBtn">
+                <img 
+                    src="https://d1yei2z3i6k35z.cloudfront.net/13184094/697fb6fdc7f4b_61843ecf-cd48-45a6-8409-6de8a784b1f4.jfif" 
+                    alt="Telegram"
+                    class="telegram-logo"
+                    loading="lazy"
+                    decoding="async"
+                >
+                ORDER ON TELEGRAM
+            </button>
+
+            <!-- Secure Badge -->
+            <div class="secure-badge">ENCRYPTED & SECURE</div>
+
+            <!-- Luxury Scroll Indicator -->
+            <div class="scroll-indicator"></div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Horsepower Industry</div>
-                <p>Quality Unani & Ayurvedic Products for Your Well-being</p>
-                <p class="copyright">© 2025 Horsepower Industry. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Simple quantity validation
-        document.getElementById('quantity').addEventListener('change', function() {
-            if(this.value < 1) {
-                this.value = 1;
+        // Ultra-fast, optimized script
+        (function() {
+            'use strict';
+            
+            const orderBtn = document.getElementById('orderBtn');
+            const container = document.querySelector('.container');
+            
+            // Immediate button animation on load
+            requestAnimationFrame(() => {
+                orderBtn.style.opacity = '1';
+                orderBtn.style.transform = 'translateY(0)';
+            });
+
+            // Killer click handler with micro-interactions
+            orderBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Micro-interaction feedback
+                this.style.transform = 'scale(0.96)';
+                
+                // Open Telegram after slight delay for UX
+                setTimeout(() => {
+                    window.open('https://t.me/Hores_Power', '_blank', 'noopener,noreferrer');
+                }, 150);
+                
+                // Reset button
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 300);
+            });
+
+            // Luxury parallax effect
+            let lastTime = 0;
+            document.addEventListener('mousemove', (e) => {
+                const now = performance.now();
+                if (now - lastTime < 16) return; // 60fps throttle
+                lastTime = now;
+                
+                const x = (e.clientX / window.innerWidth - 0.5) * 20;
+                const y = (e.clientY / window.innerHeight - 0.5) * 20;
+                
+                container.style.transform = `
+                    perspective(1000px) 
+                    rotateX(${y * 0.03}deg) 
+                    rotateY(${x * 0.03}deg)
+                `;
+            });
+
+            // Reset on mouse leave
+            document.addEventListener('mouseleave', () => {
+                container.style.transform = '';
+            });
+
+            // Image load optimization
+            const img = document.querySelector('.product-image');
+            if (img.complete) {
+                img.classList.add('loaded');
+            } else {
+                img.addEventListener('load', () => {
+                    img.classList.add('loaded');
+                }, { once: true });
             }
-        });
-        
-        // Telegram order button with quantity
-        document.querySelector('.telegram-order').addEventListener('click', function(e) {
-            const quantity = document.getElementById('quantity').value;
-            const productName = 'Unani Swarna Bhasma';
-            const price = '₹6,000.00';
+
+            // Prevent unwanted behaviors
+            document.addEventListener('contextmenu', e => e.preventDefault());
+            document.addEventListener('dragstart', e => e.preventDefault());
             
-            // Construct a message for Telegram
-            const message = `Order Request:%0AProduct: ${productName}%0AQuantity: ${quantity}%0APrice per unit: ${price}%0ATotal: ₹${6000 * quantity}.00`;
+            // Clean URL bar for mobile
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
             
-            // Update the Telegram link with order details
-            this.href = `https://t.me/Hores_Power?text=${message}`;
-        });
+            // Force GPU acceleration
+            container.style.transform = 'translateZ(0)';
+        })();
     </script>
 </body>
 </html>
