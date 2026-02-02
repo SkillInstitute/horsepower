@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Meta Pixel Code -->
+<head>
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -39,13 +40,14 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            padding: 15px;
+            font-family: 'Times New Roman', Times, serif;
             overflow-x: hidden;
             position: relative;
+            color: #D4AF37;
         }
 
-        /* Metallic gradient background */
+        /* Luxury gold texture background */
         body::before {
             content: '';
             position: fixed;
@@ -54,53 +56,33 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 40%),
-                linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+                radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(184, 134, 11, 0.06) 0%, transparent 40%),
+                linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
             z-index: -2;
         }
 
-        /* Animated particle background */
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(1px 1px at 20% 30%, rgba(255, 215, 0, 0.3) 1px, transparent 0),
-                radial-gradient(1px 1px at 40% 70%, rgba(120, 119, 198, 0.3) 1px, transparent 0),
-                radial-gradient(1px 1px at 60% 20%, rgba(255, 215, 0, 0.3) 1px, transparent 0),
-                radial-gradient(1px 1px at 80% 50%, rgba(120, 119, 198, 0.3) 1px, transparent 0),
-                radial-gradient(1px 1px at 30% 80%, rgba(255, 215, 0, 0.3) 1px, transparent 0);
-            background-size: 400px 400px;
-            z-index: -1;
-            animation: particleMove 40s linear infinite;
-        }
-
-        @keyframes particleMove {
-            from { transform: translateY(0) translateX(0); }
-            to { transform: translateY(200px) translateX(100px); }
-        }
-
-        /* Main container - Luxury glass morphism */
+        /* Main container - COMPACT design */
         .container {
             width: 100%;
-            max-width: 360px;
-            aspect-ratio: 9/16;
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(20px);
-            border-radius: 32px;
+            max-width: 380px;
+            height: auto;
+            min-height: auto;
+            max-height: 90vh;
+            background: rgba(10, 10, 10, 0.95);
+            border-radius: 20px;
             padding: 20px;
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(255, 215, 0, 0.1);
+            border: 2px solid #D4AF37;
             box-shadow: 
-                0 8px 32px rgba(0, 0, 0, 0.4),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1),
-                inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-            animation: containerAppear 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+                0 15px 40px rgba(0, 0, 0, 0.8),
+                inset 0 0 0 1px rgba(212, 175, 55, 0.3),
+                0 0 30px rgba(212, 175, 55, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: containerAppear 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         @keyframes containerAppear {
@@ -114,231 +96,185 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
             }
         }
 
-        /* Gold border effect */
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: 32px;
-            padding: 2px;
-            background: linear-gradient(45deg, 
-                transparent 0%, 
-                rgba(255, 215, 0, 0.3) 25%,
-                rgba(120, 119, 198, 0.3) 50%,
-                rgba(255, 215, 0, 0.3) 75%,
-                transparent 100%);
-            -webkit-mask: 
-                linear-gradient(#fff 0 0) content-box, 
-                linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            pointer-events: none;
-            animation: borderGlow 3s ease-in-out infinite;
-        }
-
-        @keyframes borderGlow {
-            0%, 100% { opacity: 0.5; }
-            50% { opacity: 1; }
-        }
-
-        /* Content layout */
+        /* Content layout - COMPACT */
         .content {
-            height: 100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
             text-align: center;
             position: relative;
             z-index: 1;
+            gap: 15px;
         }
 
-        /* Premium image container */
-        .image-container {
-            width: 200px;
-            height: 200px;
+        /* Premium badge - COMPACT */
+        .premium-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37, #B8860B);
+            color: #0a0a0a;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Luxury product name - COMPACT */
+        .product-name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #D4AF37;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            text-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+            font-family: Georgia, serif;
+        }
+
+        /* Hindi text - COMPACT */
+        .hindi-text {
+            font-size: 1.1rem;
+            color: #F5D76E;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        /* Classic divider - COMPACT */
+        .classic-divider {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            margin: 5px auto;
             position: relative;
-            margin-top: 10px;
-            border-radius: 24px;
-            overflow: hidden;
-            transform-style: preserve-3d;
-            animation: float 6s ease-in-out infinite;
-            box-shadow: 
-                0 20px 40px rgba(0, 0, 0, 0.5),
-                0 0 60px rgba(255, 215, 0, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 215, 0, 0.2);
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotateX(0); }
-            50% { transform: translateY(-10px) rotateX(5deg); }
+        .classic-divider::before,
+        .classic-divider::after {
+            content: '❖';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #D4AF37;
+            font-size: 0.7rem;
+        }
+
+        .classic-divider::before {
+            left: -12px;
+        }
+
+        .classic-divider::after {
+            right: -12px;
+        }
+
+        /* Product image container - COMPACT */
+        .image-container {
+            width: 140px;
+            height: 140px;
+            position: relative;
+            margin: 10px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #D4AF37;
+            box-shadow: 
+                0 10px 25px rgba(0, 0, 0, 0.7),
+                0 0 30px rgba(212, 175, 55, 0.3),
+                inset 0 0 20px rgba(0, 0, 0, 0.8);
         }
 
         .product-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: saturate(1.1) contrast(1.05);
-            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-            transform-origin: center center;
+            filter: brightness(1.05) contrast(1.1);
         }
 
-        .image-container:hover .product-image {
-            transform: scale(1.08) rotateY(5deg);
+        /* Benefits section - COMPACT */
+        .benefits {
+            width: 100%;
+            margin: 5px 0;
         }
 
-        /* Image glow effect */
-        .image-container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at center, 
-                rgba(255, 215, 0, 0.1) 0%, 
-                transparent 70%);
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        /* Luxury typography */
-        .product-name {
-            font-size: 2rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #B8860B 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -0.02em;
-            line-height: 1.1;
-            margin-top: 8px;
-            text-shadow: 0 4px 30px rgba(255, 215, 0, 0.3);
-            position: relative;
-            display: inline-block;
-        }
-
-        .product-name::after {
-            content: '';
-            position: absolute;
-            bottom: -6px;
-            left: 15%;
-            width: 70%;
-            height: 1px;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(255, 215, 0, 0.5), 
-                transparent);
-        }
-
-        .hindi-text {
-            font-size: 1.2rem;
-            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-top: 6px;
-            font-weight: 600;
-            letter-spacing: 0.03em;
-            opacity: 0.9;
-        }
-
-        /* Premium tagline */
-        .tagline {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.6);
-            letter-spacing: 0.2em;
+        .benefits-title {
+            font-size: 0.9rem;
+            color: #F5D76E;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            margin-top: 4px;
             position: relative;
             display: inline-block;
+            padding-bottom: 5px;
         }
 
-        .tagline::before,
-        .tagline::after {
-            content: '✦';
+        .benefits-title::after {
+            content: '';
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: rgba(255, 215, 0, 0.5);
-        }
-
-        .tagline::before {
-            left: -20px;
-        }
-
-        .tagline::after {
-            right: -20px;
-        }
-
-        /* Benefits hint */
-        .benefits-hint {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.4;
-            max-width: 280px;
-            margin: 16px auto;
-            padding: 0 12px;
-            font-weight: 300;
-            letter-spacing: 0.02em;
-        }
-
-        /* Luxury divider */
-        .divider {
-            width: 60px;
-            height: 1px;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(255, 215, 0, 0.6), 
-                rgba(120, 119, 198, 0.6), 
-                transparent);
-            margin: 20px 0;
-            position: relative;
-        }
-
-        .divider::before {
-            content: '✦';
-            position: absolute;
-            top: 50%;
+            bottom: 0;
             left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgba(255, 215, 0, 0.8);
-            font-size: 0.8rem;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background: #D4AF37;
         }
 
-        /* Killer Telegram Button */
+        .benefits-list {
+            list-style: none;
+            padding: 0 10px;
+        }
+
+        .benefit-item {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 6px;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .benefit-item::before {
+            content: '✦';
+            color: #D4AF37;
+            font-size: 0.7rem;
+        }
+
+        /* Action section - COMPACT */
+        .action-section {
+            width: 100%;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        /* Classic telegram button - COMPACT */
         .telegram-btn {
-            background: linear-gradient(135deg, 
-                #0088cc 0%, 
-                #006699 50%, 
-                #004466 100%);
+            background: linear-gradient(135deg, #0088CC, #006699);
             color: white;
             border: none;
-            padding: 20px 36px;
-            border-radius: 16px;
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
+            padding: 16px 20px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
             width: 100%;
-            max-width: 280px;
-            margin: 16px 0;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: 300px;
+            margin: 0 auto 10px;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 8px 20px rgba(0, 136, 204, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
             position: relative;
             overflow: hidden;
-            box-shadow: 
-                0 8px 32px rgba(0, 136, 204, 0.4),
-                0 2px 8px rgba(0, 136, 204, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .telegram-btn::before {
@@ -348,10 +284,7 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(255, 255, 255, 0.2), 
-                transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
             transition: 0.5s;
         }
 
@@ -360,131 +293,173 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
         }
 
         .telegram-btn:hover {
-            transform: translateY(-3px) scale(1.02);
+            transform: translateY(-2px);
             box-shadow: 
-                0 15px 40px rgba(0, 136, 204, 0.6),
-                0 4px 15px rgba(0, 136, 204, 0.4),
+                0 12px 25px rgba(0, 136, 204, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
-            background: linear-gradient(135deg, 
-                #00aaff 0%, 
-                #0088cc 50%, 
-                #006699 100%);
-        }
-
-        .telegram-btn:active {
-            transform: translateY(0) scale(0.98);
-            transition: transform 0.1s;
+            background: linear-gradient(135deg, #0099EE, #0077AA);
         }
 
         .telegram-logo {
-            width: 28px;
-            height: 28px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
             object-fit: cover;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-            transition: transform 0.3s ease;
+            filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
         }
 
-        .telegram-btn:hover .telegram-logo {
-            transform: scale(1.1) rotate(10deg);
+        /* Mini text near button - COMPACT */
+        .action-note {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            margin-top: 6px;
+            letter-spacing: 0.5px;
+            font-style: italic;
         }
 
-        /* Secure badge */
-        .secure-badge {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 12px;
-            font-size: 0.65rem;
-            color: rgba(255, 255, 255, 0.4);
-            letter-spacing: 0.1em;
+        .action-note span {
+            color: #F5D76E;
+            font-weight: bold;
+        }
+
+        /* Footer - COMPACT */
+        .footer {
+            width: 100%;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.6rem;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
         }
 
-        .secure-badge::before {
-            content: '🔒';
-            font-size: 0.8rem;
-            filter: grayscale(1) brightness(2);
-        }
-
-        /* Scroll indicator */
-        .scroll-indicator {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 30px;
-            height: 48px;
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            border-radius: 15px;
+        /* Security badge - COMPACT */
+        .security-badge {
             display: flex;
+            align-items: center;
             justify-content: center;
-            padding-top: 8px;
+            gap: 6px;
+            margin-top: 8px;
+            color: rgba(212, 175, 55, 0.7);
+            font-size: 0.65rem;
         }
 
-        .scroll-indicator::before {
-            content: '';
-            width: 4px;
-            height: 8px;
-            background: rgba(255, 215, 0, 0.8);
-            border-radius: 2px;
-            animation: scrollIndicator 2s infinite;
-        }
-
-        @keyframes scrollIndicator {
-            0%, 100% { 
-                transform: translateY(0);
-                opacity: 1;
+        /* Mobile optimizations - EXTRA COMPACT */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
             }
-            50% { 
-                transform: translateY(8px);
-                opacity: 0.5;
-            }
-        }
-
-        /* Performance optimizations */
-        .container {
-            contain: layout paint style;
-            will-change: transform;
-        }
-
-        .product-image {
-            content-visibility: auto;
-            will-change: transform;
-        }
-
-        /* Mobile optimizations */
-        @media (max-width: 400px) {
+            
             .container {
-                padding: 16px;
+                padding: 15px;
+                max-height: 85vh;
+            }
+            
+            .product-name {
+                font-size: 1.8rem;
             }
             
             .image-container {
-                width: 180px;
-                height: 180px;
+                width: 120px;
+                height: 120px;
+            }
+            
+            .telegram-btn {
+                padding: 14px 16px;
+                font-size: 0.85rem;
+                max-width: 280px;
+            }
+            
+            .benefit-item {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-height: 700px) {
+            .container {
+                max-height: 95vh;
+                padding: 12px;
+            }
+            
+            .image-container {
+                width: 110px;
+                height: 110px;
+                margin: 8px auto;
             }
             
             .product-name {
                 font-size: 1.7rem;
             }
+            
+            .benefits {
+                margin: 3px 0;
+            }
+            
+            .telegram-btn {
+                padding: 12px 14px;
+            }
         }
 
+        /* Extra small screens */
+        @media (max-height: 600px) {
+            .container {
+                max-height: 98vh;
+                padding: 10px;
+            }
+            
+            .product-name {
+                font-size: 1.6rem;
+            }
+            
+            .hindi-text {
+                font-size: 1rem;
+            }
+            
+            .benefit-item {
+                font-size: 0.7rem;
+                margin-bottom: 4px;
+            }
+            
+            .telegram-btn {
+                padding: 10px 12px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Disable hover effects on touch devices */
         @media (hover: none) {
             .telegram-btn:hover {
                 transform: none;
             }
             
             .telegram-btn:active {
-                transform: scale(0.96);
+                transform: scale(0.97);
             }
+        }
+
+        /* Ensure no scrolling */
+        html, body {
+            overflow: hidden;
+            height: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <!-- Premium Product Image -->
+            <!-- Premium badge -->
+            <div class="premium-badge">Premium Unani Gold</div>
+            
+            <!-- Product Name -->
+            <h1 class="product-name">SWARNA BHASMA</h1>
+            <div class="hindi-text">स्वर्ण भस्म</div>
+            
+            <!-- Classic divider -->
+            <div class="classic-divider"></div>
+
+            <!-- Product Image -->
             <div class="image-container">
                 <img 
                     src="https://d1yei2z3i6k35z.cloudfront.net/13184094/697fb6fdc7f4b_61843ecf-cd48-45a6-8409-6de8a784b1f4.jfif" 
@@ -492,65 +467,71 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
                     class="product-image"
                     loading="eager"
                     decoding="async"
-                    fetchpriority="high"
                 >
             </div>
 
-            <!-- Luxury Product Name -->
-            <div>
-                <div class="tagline">PREMIUM AYURVEDIC</div>
-                <h1 class="product-name">SWARNA BHASMA</h1>
-                <div class="hindi-text">स्वर्ण भस्म</div>
-                <div class="benefits-hint">
-                    Ancient Unani gold formulation • Rejuvenation & Vitality • Premium Purity
+            <!-- Benefits Section -->
+            <div class="benefits">
+                <div class="benefits-title">Key Benefits</div>
+                <ul class="benefits-list">
+                    <li class="benefit-item">Rejuvenates & promotes longevity</li>
+                    <li class="benefit-item">Enhances memory & cognitive function</li>
+                    <li class="benefit-item">Boosts immunity & vitality</li>
+                </ul>
+            </div>
+
+            <!-- Action Section -->
+            <div class="action-section">
+                <!-- Classic Telegram Button -->
+                <button class="telegram-btn" id="orderBtn">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" 
+                        alt="Telegram"
+                        class="telegram-logo"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    CHAT ON TELEGRAM
+                </button>
+                
+                <!-- Mini text near button -->
+                <div class="action-note">
+                    <span>TALK AND PLACE ORDER</span> • Direct specialist consultation
                 </div>
             </div>
 
-            <!-- Luxury Divider -->
-            <div class="divider"></div>
-
-            <!-- Killer Telegram Button -->
-            <button class="telegram-btn" id="orderBtn">
-                <img 
-                    src="https://d1yei2z3i6k35z.cloudfront.net/13184094/697fb6fdc7f4b_61843ecf-cd48-45a6-8409-6de8a784b1f4.jfif" 
-                    alt="Telegram"
-                    class="telegram-logo"
-                    loading="lazy"
-                    decoding="async"
-                >
-                ORDER ON TELEGRAM
-            </button>
-
-            <!-- Secure Badge -->
-            <div class="secure-badge">ENCRYPTED & SECURE</div>
-
-            <!-- Luxury Scroll Indicator -->
-            <div class="scroll-indicator"></div>
+            <!-- Footer -->
+            <div class="footer">
+                <div>© 2023 Unani Swarna Bhasma</div>
+                <div class="security-badge">
+                    <span>🔒</span> SECURE & CONFIDENTIAL
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        // Ultra-fast, optimized script
+        // Optimized script for compact design
         (function() {
             'use strict';
             
             const orderBtn = document.getElementById('orderBtn');
-            const container = document.querySelector('.container');
             
-            // Immediate button animation on load
-            requestAnimationFrame(() => {
+            // Smooth button appearance
+            window.addEventListener('load', () => {
                 orderBtn.style.opacity = '1';
                 orderBtn.style.transform = 'translateY(0)';
             });
 
-            // Killer click handler with micro-interactions
+            // Button click handler
             orderBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 
-                // Micro-interaction feedback
-                this.style.transform = 'scale(0.96)';
+                // Button press effect
+                this.style.transform = 'scale(0.97)';
+                this.style.boxShadow = 'inset 0 2px 8px rgba(0, 0, 0, 0.3)';
                 
-                // Open Telegram after slight delay for UX
+                // Open Telegram
                 setTimeout(() => {
                     window.open('https://t.me/m/q6hFwxzHM2Q1', '_blank', 'noopener,noreferrer');
                 }, 150);
@@ -558,32 +539,18 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
                 // Reset button
                 setTimeout(() => {
                     this.style.transform = '';
+                    this.style.boxShadow = '';
                 }, 300);
             });
 
-            // Luxury parallax effect
-            let lastTime = 0;
-            document.addEventListener('mousemove', (e) => {
-                const now = performance.now();
-                if (now - lastTime < 16) return; // 60fps throttle
-                lastTime = now;
-                
-                const x = (e.clientX / window.innerWidth - 0.5) * 20;
-                const y = (e.clientY / window.innerHeight - 0.5) * 20;
-                
-                container.style.transform = `
-                    perspective(1000px) 
-                    rotateX(${y * 0.03}deg) 
-                    rotateY(${x * 0.03}deg)
-                `;
-            });
+            // Prevent scrolling
+            document.addEventListener('touchmove', function(e) {
+                if (e.target.closest('.container')) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
 
-            // Reset on mouse leave
-            document.addEventListener('mouseleave', () => {
-                container.style.transform = '';
-            });
-
-            // Image load optimization
+            // Image load handling
             const img = document.querySelector('.product-image');
             if (img.complete) {
                 img.classList.add('loaded');
@@ -597,13 +564,18 @@ src="https://www.facebook.com/tr?id=2384287108662237&ev=PageView&noscript=1"
             document.addEventListener('contextmenu', e => e.preventDefault());
             document.addEventListener('dragstart', e => e.preventDefault());
             
-            // Clean URL bar for mobile
-            if ('scrollRestoration' in history) {
-                history.scrollRestoration = 'manual';
+            // Force GPU acceleration
+            const container = document.querySelector('.container');
+            container.style.transform = 'translateZ(0)';
+            
+            // Adjust container height on resize
+            function adjustContainerHeight() {
+                const vh = window.innerHeight * 0.01;
+                container.style.maxHeight = `calc(${vh * 90}px)`;
             }
             
-            // Force GPU acceleration
-            container.style.transform = 'translateZ(0)';
+            window.addEventListener('resize', adjustContainerHeight);
+            adjustContainerHeight();
         })();
     </script>
 </body>
